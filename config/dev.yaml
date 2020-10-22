@@ -1,0 +1,33 @@
+# Global Configuration
+web:
+  addr: '192.168.0.106:8080'
+
+jwt:
+  signing-key: 'tdkj'
+
+mongo:
+  host: "mongodb://@localhost:27017"
+
+# mysql connect configuration
+mysql:
+  username: root
+  password: 'root'
+  path: '192.168.0.131:3306'
+  db-name: 'archivemanage_data'
+  config: 'charset=utf8mb4&parseTime=True&loc=Local'
+  max-idle-conns: 10
+  max-open-conns: 10
+  log-mode: false
+
+log:
+  prefix: '[TD]'
+  log-file: true
+  stdout: 'DEBUG'
+  file: 'DEBUG'
+
+# 保存路径
+path:
+  # 默认值
+  file: '/assets/'
+  png: '/assets/png/'
+  mp4: '/assets/mp4/'

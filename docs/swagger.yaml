@@ -1,0 +1,161 @@
+info:
+  contact: {}
+  license: {}
+paths:
+  /base/code:
+    get:
+      description: 直接发送验证码给前端，以后的话用第三方发送给用户手机
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 发送验证码
+      tags:
+      - mobile
+  /data/field:
+    get:
+      description: .
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 档案字段
+      tags:
+      - 读取数据
+  /data/file:
+    get:
+      description: 。
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 档案文件信息
+      tags:
+      - 读取数据
+  /data/record:
+    get:
+      description: 。
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 档案记录
+      tags:
+      - 读取数据
+  /data/table:
+    get:
+      description: 。
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 获取表的全部记录
+      tags:
+      - 读取数据
+  /data/version:
+    get:
+      description: 。
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 档案版本信息
+      tags:
+      - 读取数据
+  /file/upload/type:
+    post:
+      description: 上传多个文件
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 监控
+      tags:
+      - 文件
+  /mobile/login:
+    get:
+      description: 手机用户登录
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 登录
+      tags:
+      - mobile
+  /mobile/register:
+    post:
+      description: 手机号密码和验证码
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 手机用户注册
+      tags:
+      - mobile
+  /monitor/server:
+    get:
+      description: 获取系统信息
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 监控
+      tags:
+      - default
+  /sys/login:
+    get:
+      description: 用户登录，填写用户呢称和密码
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 管理用户登录
+      tags:
+      - system
+  /sys/register:
+    get:
+      description: 用户注册，填写用户呢称和密码
+      responses:
+        "200":
+          description: '{"message": "ok"}'
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: 管理用户注册
+      tags:
+      - system
+swagger: "2.0"

@@ -1,0 +1,273 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {},
+        "license": {}
+    },
+    "paths": {
+        "/base/code": {
+            "get": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "直接发送验证码给前端，以后的话用第三方发送给用户手机",
+                "tags": [
+                    "mobile"
+                ],
+                "summary": "发送验证码",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/data/field": {
+            "get": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": ".",
+                "tags": [
+                    "读取数据"
+                ],
+                "summary": "档案字段",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/data/file": {
+            "get": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "。",
+                "tags": [
+                    "读取数据"
+                ],
+                "summary": "档案文件信息",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/data/record": {
+            "get": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "。",
+                "tags": [
+                    "读取数据"
+                ],
+                "summary": "档案记录",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/data/table": {
+            "get": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "。",
+                "tags": [
+                    "读取数据"
+                ],
+                "summary": "获取表的全部记录",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/data/version": {
+            "get": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "。",
+                "tags": [
+                    "读取数据"
+                ],
+                "summary": "档案版本信息",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/file/upload/type": {
+            "post": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "上传多个文件",
+                "tags": [
+                    "文件"
+                ],
+                "summary": "监控",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/mobile/login": {
+            "get": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "手机用户登录",
+                "tags": [
+                    "mobile"
+                ],
+                "summary": "登录",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/mobile/register": {
+            "post": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "手机号密码和验证码",
+                "tags": [
+                    "mobile"
+                ],
+                "summary": "手机用户注册",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/monitor/server": {
+            "get": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "获取系统信息",
+                "tags": [
+                    "default"
+                ],
+                "summary": "监控",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/sys/login": {
+            "get": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "用户登录，填写用户呢称和密码",
+                "tags": [
+                    "system"
+                ],
+                "summary": "管理用户登录",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/sys/register": {
+            "get": {
+                "security": [
+                    {
+                        "Bearer": []
+                    }
+                ],
+                "description": "用户注册，填写用户呢称和密码",
+                "tags": [
+                    "system"
+                ],
+                "summary": "管理用户注册",
+                "responses": {
+                    "200": {
+                        "description": "{\"message\": \"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
